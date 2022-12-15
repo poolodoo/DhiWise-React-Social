@@ -2,78 +2,78 @@ import React from "react";
 
 import {
   Row,
-  Stack,
-  Line,
   Column,
   Img,
   Button,
+  Stack,
+  Line,
   Text,
   List,
   Input,
 } from "components";
-import Sidebar from "components/Sidebar/Sidebar";
+import Sidebar from "components/Sidebar";
 
 const VideoChatPage = () => {
   return (
     <>
-      <Row className="bg-gray_100 font-sfprodisplay items-center mx-[auto] w-[100%]">
-        <Sidebar className="w-[11%]" />
-        <Stack className="2xl:h-[1025px] 3xl:h-[1230px] lg:h-[729px] xl:h-[911px] lg:ml-[3px] xl:ml-[4px] 2xl:ml-[5px] 3xl:ml-[6px] w-[88%]">
-          <Row className="absolute items-center justify-between left-[0] w-[72%]">
-            <Line className="bg-white_A700_7e xl:h-[114px] 2xl:h-[129px] 3xl:h-[154px] lg:h-[92px] rounded-radius25 w-[5px]" />
+      <Row className="bg-gray_100 flex flex-row md:flex-wrap sm:flex-wrap font-sfprodisplay items-center mx-[auto] w-[100%]">
+        <Sidebar className="md:hidden sm:hidden w-[12%]" />
+        <Stack className="h-[1024px] max-w-[1270px] sm:ml-[2px] md:ml-[3px] ml-[auto] mr-[auto] sm:pl-[15px] sm:pr-[15px] relative w-[100%]">
+          <Row className="absolute flex flex-row md:flex-wrap sm:flex-wrap items-center justify-between left-[0] sm:mx-[0] sm:px-[0] sm:w-[100%] w-[73%]">
+            <Line className="bg-white_A700_7e h-[128px] sm:h-[69px] md:h-[89px] sm:my-[238px] md:my-[308px] my-[448px] rounded-radius25 w-[5px]" />
             <Column
-              className="bg-cover bg-repeat lg:p-[28px] xl:p-[35px] 2xl:p-[40px] 3xl:p-[48px] rounded-bl-[32px] rounded-br-[0] rounded-tl-[32px] rounded-tr-[0] w-[98%]"
+              className="bg-cover bg-no-repeat flex flex-col sm:mx-[0] sm:p-[15px] md:p-[27px] p-[40px] rounded-bl-[32px] rounded-br-[0] rounded-tl-[32px] rounded-tr-[0] sm:w-[100%] w-[99%]"
               style={{ backgroundImage: "url('images/img_group1428.png')" }}
             >
               <Img
                 src="images/img_image_199X160.png"
-                className="lg:h-[142px] xl:h-[178px] 2xl:h-[200px] 3xl:h-[239px] lg:ml-[3px] xl:ml-[4px] 2xl:ml-[5px] 3xl:ml-[6px] rounded-radius12 w-[20%]"
+                className="max-w-[100%] sm:ml-[2px] md:ml-[3px] ml-[5px] rounded-radius12 w-[20%]"
                 alt="Image"
               />
-              <Row className="items-center lg:ml-[160px] xl:ml-[201px] 2xl:ml-[226px] 3xl:ml-[271px] lg:mr-[213px] xl:mr-[266px] 2xl:mr-[300px] 3xl:mr-[360px] lg:mt-[473px] xl:mt-[592px] 2xl:mt-[666px] 3xl:mt-[799px] w-[36%]">
+              <Row className="flex flex-row md:flex-wrap sm:flex-wrap items-center md:ml-[155px] ml-[226px] md:mr-[206px] mr-[300px] sm:mt-[354px] md:mt-[458px] mt-[666px] sm:mx-[0] sm:px-[0] sm:w-[100%] w-[36%]">
                 <Button
-                  className="flex lg:h-[56px] xl:h-[70px] 2xl:h-[79px] 3xl:h-[94px] items-center justify-center lg:w-[55px] xl:w-[69px] 2xl:w-[78px] 3xl:w-[93px]"
+                  className="flex sm:h-[42px] md:h-[54px] h-[78px] items-center justify-center sm:w-[41px] md:w-[53px] w-[78px]"
                   shape="icbRoundedBorder24"
                   size="xlIcn"
                   variant="icbFillWhiteA700"
                 >
                   <Img
                     src="images/img_iconmicoff.svg"
-                    className="flex items-center justify-center lg:h-[26px] xl:h-[33px] 2xl:h-[37px] 3xl:h-[44px]"
+                    className="h-[36px] sm:h-[20px] md:h-[25px] flex items-center justify-center"
                     alt="IconMicOff"
                   />
                 </Button>
                 <Button
-                  className="flex lg:h-[56px] xl:h-[70px] 2xl:h-[79px] 3xl:h-[94px] items-center justify-center lg:ml-[21px] xl:ml-[26px] 2xl:ml-[30px] 3xl:ml-[36px] lg:w-[55px] xl:w-[69px] 2xl:w-[78px] 3xl:w-[93px]"
+                  className="flex sm:h-[42px] md:h-[54px] h-[78px] items-center justify-center sm:ml-[15px] md:ml-[20px] ml-[30px] sm:w-[41px] md:w-[53px] w-[78px]"
                   shape="icbRoundedBorder24"
                   size="xlIcn"
                   variant="icbFillWhiteA70033"
                 >
                   <Img
                     src="images/img_minimize_78X78.svg"
-                    className="flex items-center justify-center lg:h-[26px] xl:h-[33px] 2xl:h-[37px] 3xl:h-[44px]"
+                    className="h-[36px] sm:h-[20px] md:h-[25px] flex items-center justify-center"
                     alt="minimize"
                   />
                 </Button>
                 <Button
-                  className="flex lg:h-[56px] xl:h-[70px] 2xl:h-[79px] 3xl:h-[94px] items-center justify-center lg:ml-[21px] xl:ml-[26px] 2xl:ml-[30px] 3xl:ml-[36px] lg:w-[55px] xl:w-[69px] 2xl:w-[78px] 3xl:w-[93px]"
+                  className="flex sm:h-[42px] md:h-[54px] h-[78px] items-center justify-center sm:ml-[15px] md:ml-[20px] ml-[30px] sm:w-[41px] md:w-[53px] w-[78px]"
                   shape="icbRoundedBorder24"
                   size="xlIcn"
                   variant="icbFillRedA200"
                 >
                   <Img
                     src="images/img_alarm.svg"
-                    className="flex items-center justify-center lg:h-[26px] xl:h-[33px] 2xl:h-[37px] 3xl:h-[44px]"
+                    className="h-[36px] sm:h-[20px] md:h-[25px] flex items-center justify-center"
                     alt="alarm"
                   />
                 </Button>
               </Row>
             </Column>
           </Row>
-          <Column className="absolute bg-white_A700 items-end justify-end lg:p-[28px] xl:p-[35px] 2xl:p-[40px] 3xl:p-[48px] right-[0] rounded-bl-[32px] rounded-br-[0] rounded-tl-[32px] rounded-tr-[0] w-[34%]">
-            <Row className="items-center justify-end lg:mt-[3px] xl:mt-[4px] 2xl:mt-[5px] 3xl:mt-[6px] w-[33%]">
+          <Column className="absolute bg-white_A700 flex flex-col items-end justify-end sm:mx-[0] sm:p-[15px] md:p-[27px] p-[40px] right-[0] rounded-bl-[32px] rounded-br-[0] rounded-tl-[32px] rounded-tr-[0] sm:w-[100%] w-[34%]">
+            <Row className="flex flex-row md:flex-wrap sm:flex-wrap items-center justify-end sm:mt-[2px] md:mt-[3px] mt-[5px] sm:mx-[0] sm:px-[0] sm:w-[100%] w-[34%]">
               <Button
-                className="font-bold lg:text-[15px] xl:text-[19px] 2xl:text-[22px] 3xl:text-[26px] text-center mail_One1"
+                className="cursor-pointer font-bold sm:h-[26px] md:h-[34px] h-[48px] sm:text-[18.32px] md:text-[20.32px] text-[22.32px] text-center text-white_A700 sm:w-[25px] md:w-[33px] w-[48px]"
                 shape="RoundedBorder12"
                 size="lg"
                 variant="FillLightblue200"
@@ -82,24 +82,24 @@ const VideoChatPage = () => {
               </Button>
               <Img
                 src="images/img_avatar_48X48.png"
-                className="Avatar_One"
+                className="sm:h-[26px] md:h-[34px] h-[48px] max-w-[100%] sm:ml-[10px] md:ml-[13px] ml-[20px] rounded-radius12 sm:w-[25px] md:w-[33px] w-[48px]"
                 alt="Avatar"
               />
             </Row>
-            <Column className="justify-start lg:mt-[42px] xl:mt-[53px] 2xl:mt-[60px] 3xl:mt-[72px] w-[97%]">
-              <Row className="font-sfprodisplay items-center justify-between w-[97%]">
-                <Row className="items-end justify-between w-[62%]">
+            <Column className="flex flex-col justify-start sm:mt-[31px] md:mt-[41px] mt-[60px] sm:mx-[0] sm:px-[0] sm:w-[100%] w-[98%]">
+              <Row className="flex flex-row md:flex-wrap sm:flex-wrap font-sfprodisplay items-center justify-between sm:mx-[0] sm:px-[0] sm:w-[100%] w-[97%]">
+                <Row className="flex flex-row md:flex-wrap sm:flex-wrap items-end justify-between sm:mx-[0] sm:px-[0] sm:w-[100%] w-[62%]">
                   <Stack
-                    className="bg-cover bg-repeat lg:h-[42px] xl:h-[52px] 2xl:h-[59px] 3xl:h-[70px] lg:pl-[29px] xl:pl-[37px] 2xl:pl-[42px] 3xl:pl-[50px] rounded-radius12 lg:w-[41px] xl:w-[51px] 2xl:w-[58px] 3xl:w-[69px]"
+                    className="bg-cover bg-no-repeat h-[58px] sm:pb-[15px] md:pb-[28px] pb-[42px] sm:pl-[15px] md:pl-[28px] pl-[42px] relative rounded-radius12 sm:w-[30px] md:w-[39px] w-[58px]"
                     style={{ backgroundImage: "url('images/img_avatar.png')" }}
                   >
                     <Img
                       src="images/img_settings_15X15.svg"
-                      className="absolute lg:h-[11px] xl:h-[14px] 2xl:h-[16px] 3xl:h-[19px] right-[0] top-[0] lg:w-[10px] xl:w-[13px] 2xl:w-[15px] 3xl:w-[18px]"
+                      className="absolute h-[15px] max-w-[100%] md:w-[10px] w-[15px] sm:w-[7px]"
                       alt="settings Two"
                     />
                   </Stack>
-                  <Column className="justify-start mb-[1px] lg:mt-[3px] xl:mt-[4px] 2xl:mt-[5px] 3xl:mt-[6px] w-[64%]">
+                  <Column className="flex flex-col justify-start mb-[1px] sm:mt-[2px] md:mt-[3px] mt-[5px] sm:mx-[0] sm:px-[0] sm:w-[100%] w-[65%]">
                     <Text
                       className="text-gray_900 w-[auto]"
                       as="h3"
@@ -107,180 +107,246 @@ const VideoChatPage = () => {
                     >
                       Marriet Miles
                     </Text>
-                    <Text className="Enteryouremai" as="h5" variant="h5">
+                    <Text
+                      className="font-medium mt-[14px] sm:mt-[7px] md:mt-[9px] text-gray_500 w-[auto]"
+                      as="h5"
+                      variant="h5"
+                    >
                       Ongoing Call…
                     </Text>
                   </Column>
                 </Row>
                 <Img
                   src="images/img_eye.svg"
-                  className="lg:h-[18px] xl:h-[23px] 2xl:h-[26px] 3xl:h-[31px] lg:w-[17px] xl:w-[22px] 2xl:w-[25px] 3xl:w-[30px]"
+                  className="sm:h-[14px] md:h-[18px] h-[25px] max-w-[100%] sm:w-[13px] md:w-[17px] w-[25px]"
                   alt="eye"
                 />
               </Row>
-              <Column className="font-inter justify-start lg:mt-[42px] xl:mt-[53px] 2xl:mt-[60px] 3xl:mt-[72px] w-[87%]">
-                <Row className="items-start justify-between w-[100%]">
+              <Column className="flex flex-col font-inter justify-start sm:mt-[31px] md:mt-[41px] mt-[60px] sm:mx-[0] sm:px-[0] sm:w-[100%] w-[88%]">
+                <Row className="flex flex-row md:flex-wrap sm:flex-wrap items-start justify-between w-[100%]">
                   <Img
                     src="images/img_avatar_48X48.png"
-                    className="Avatar"
+                    className="sm:h-[21px] md:h-[27px] h-[38px] max-w-[100%] rounded-radius12 sm:w-[20px] md:w-[26px] w-[38px]"
                     alt="Avatar One"
                   />
-                  <Column className="justify-start w-[82%]">
-                    <Row className="items-start pr-[3px] pt-[3px] w-[56%]">
-                      <Text className="Name" as="h5" variant="h5">
+                  <Column className="flex flex-col justify-start sm:mx-[0] sm:px-[0] sm:w-[100%] w-[83%]">
+                    <Row className="flex flex-row md:flex-wrap sm:flex-wrap items-start sm:mx-[0] pr-[3px] pt-[3px] sm:px-[0] sm:w-[100%] w-[57%]">
+                      <Text
+                        className="font-bold mt-[1px] text-gray_900 w-[auto]"
+                        as="h5"
+                        variant="h5"
+                      >
                         Anne Carry
                       </Text>
-                      <Text className="time_Five" as="h6" variant="h6">
+                      <Text
+                        className="font-normal sm:ml-[2px] md:ml-[3px] ml-[5px] not-italic text-gray_500 w-[auto]"
+                        as="h6"
+                        variant="h6"
+                      >
                         4min
                       </Text>
                     </Row>
-                    <Row className="bg-gray_100 items-center justify-between 3xl:mt-[10px] lg:mt-[6px] xl:mt-[8px] 2xl:mt-[9px] 2xl:p-[10px] 3xl:p-[12px] lg:p-[7px] xl:p-[8px] rounded-radius12 w-[100%]">
+                    <Row className="bg-gray_100 flex flex-row md:flex-wrap sm:flex-wrap items-center justify-between sm:mt-[4px] md:mt-[6px] mt-[9px] p-[10px] sm:p-[5px] md:p-[6px] rounded-radius12 w-[100%]">
                       <Button
-                        className="flex items-center justify-center overflowmenu"
+                        className="flex sm:h-[21px] md:h-[27px] h-[38px] items-center justify-center sm:w-[20px] md:w-[26px] w-[38px]"
                         shape="icbRoundedBorder12"
                         size="mdIcn"
                         variant="icbFillLightblue20033"
                       >
                         <Img
                           src="images/img_forward.svg"
-                          className="flex items-center justify-center lg:h-[13px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px]"
+                          className="h-[18px] sm:h-[10px] md:h-[13px] flex items-center justify-center"
                           alt="forward"
                         />
                       </Button>
-                      <Line className="bg-gray_500_7e h-[4px] rounded-radius2 w-[67%]" />
-                      <Text className="rowtime" as="h6" variant="h6">
+                      <Line className="bg-gray_500_7e h-[4px] md:my-[11px] my-[17px] sm:my-[9px] rounded-radius2 sm:w-[100%] w-[68%]" />
+                      <Text
+                        className="font-normal not-italic text-gray_500 w-[auto]"
+                        as="h6"
+                        variant="h6"
+                      >
                         0:06
                       </Text>
                     </Row>
                   </Column>
                 </Row>
                 <List
-                  className="gap-[0] min-h-[auto] lg:mt-[34px] xl:mt-[43px] 2xl:mt-[49px] 3xl:mt-[58px] w-[83%]"
+                  className="sm:gap-[21px] md:gap-[27px] gap-[40px] grid min-h-[auto] sm:mt-[26px] md:mt-[33px] mt-[49px] sm:w-[100%] w-[84%]"
                   orientation="vertical"
                 >
-                  <Row className="listavatar_ten">
+                  <Row className="flex flex-row md:flex-wrap sm:flex-wrap items-start justify-between pb-[3px] pr-[3px] w-[100%]">
                     <Img
                       src="images/img_avatar.png"
-                      className="Avatar"
+                      className="sm:h-[21px] md:h-[27px] h-[38px] max-w-[100%] rounded-radius12 sm:w-[20px] md:w-[26px] w-[38px]"
                       alt="Avatar Two"
                     />
-                    <Column className="justify-start lg:mb-[5px] xl:mb-[7px] 2xl:mb-[8px] 3xl:mb-[9px] w-[78%]">
-                      <Row className="items-start pr-[2px] py-[2px] w-[72%]">
-                        <Text className="Username_Ten" as="h5" variant="h5">
+                    <Column className="flex flex-col justify-start sm:mb-[4px] md:mb-[5px] mb-[8px] sm:mx-[0] sm:px-[0] sm:w-[100%] w-[79%]">
+                      <Row className="flex flex-row md:flex-wrap sm:flex-wrap items-start sm:mx-[0] pr-[2px] sm:px-[0] py-[2px] sm:w-[100%] w-[72%]">
+                        <Text
+                          className="font-bold mb-[1px] text-gray_900 w-[auto]"
+                          as="h5"
+                          variant="h5"
+                        >
                           Marriet Miles
                         </Text>
-                        <Text className="time_Seven" as="h6" variant="h6">
+                        <Text
+                          className="font-normal sm:ml-[2px] md:ml-[3px] ml-[5px] mt-[1px] not-italic text-gray_500 w-[auto]"
+                          as="h6"
+                          variant="h6"
+                        >
                           4min
                         </Text>
                       </Row>
-                      <Text className="columnavatar1" as="h5" variant="h5">
+                      <Text
+                        className="font-normal mt-[14px] sm:mt-[7px] md:mt-[9px] not-italic text-gray_500 w-[auto]"
+                        as="h5"
+                        variant="h5"
+                      >
                         Yes, I saw his post yesterday
                       </Text>
                     </Column>
                   </Row>
-                  <Row className="listavatar_ten">
+                  <Row className="flex flex-row md:flex-wrap sm:flex-wrap items-start justify-between pb-[3px] pr-[3px] w-[100%]">
                     <Img
                       src="images/img_avatar_48X48.png"
-                      className="Avatar"
+                      className="sm:h-[21px] md:h-[27px] h-[38px] max-w-[100%] rounded-radius12 sm:w-[20px] md:w-[26px] w-[38px]"
                       alt="Avatar Three"
                     />
-                    <Column className="justify-start lg:mb-[5px] xl:mb-[7px] 2xl:mb-[8px] 3xl:mb-[9px] w-[78%]">
-                      <Row className="items-start pr-[2px] py-[2px] w-[72%]">
-                        <Text className="Username_Ten" as="h5" variant="h5">
+                    <Column className="flex flex-col justify-start sm:mb-[4px] md:mb-[5px] mb-[8px] sm:mx-[0] sm:px-[0] sm:w-[100%] w-[79%]">
+                      <Row className="flex flex-row md:flex-wrap sm:flex-wrap items-start sm:mx-[0] pr-[2px] sm:px-[0] py-[2px] sm:w-[100%] w-[72%]">
+                        <Text
+                          className="font-bold mb-[1px] text-gray_900 w-[auto]"
+                          as="h5"
+                          variant="h5"
+                        >
                           Marriet Miles
                         </Text>
-                        <Text className="time_Seven" as="h6" variant="h6">
+                        <Text
+                          className="font-normal sm:ml-[2px] md:ml-[3px] ml-[5px] mt-[1px] not-italic text-gray_500 w-[auto]"
+                          as="h6"
+                          variant="h6"
+                        >
                           4min
                         </Text>
                       </Row>
-                      <Text className="columnavatar1" as="h5" variant="h5">
+                      <Text
+                        className="font-normal mt-[14px] sm:mt-[7px] md:mt-[9px] not-italic text-gray_500 w-[auto]"
+                        as="h5"
+                        variant="h5"
+                      >
                         Yes, I saw his post yesterday
                       </Text>
                     </Column>
                   </Row>
                 </List>
-                <Row className="items-start justify-between lg:mt-[28px] xl:mt-[35px] 2xl:mt-[40px] 3xl:mt-[48px] w-[100%]">
+                <Row className="flex flex-row md:flex-wrap sm:flex-wrap items-start justify-between sm:mt-[21px] md:mt-[27px] mt-[40px] w-[100%]">
                   <Img
                     src="images/img_avatar.png"
-                    className="Avatar"
+                    className="sm:h-[21px] md:h-[27px] h-[38px] max-w-[100%] rounded-radius12 sm:w-[20px] md:w-[26px] w-[38px]"
                     alt="Avatar Four"
                   />
-                  <Column className="justify-start w-[82%]">
-                    <Row className="items-start pr-[3px] pt-[3px] w-[56%]">
-                      <Text className="Name" as="h5" variant="h5">
+                  <Column className="flex flex-col justify-start sm:mx-[0] sm:px-[0] sm:w-[100%] w-[83%]">
+                    <Row className="flex flex-row md:flex-wrap sm:flex-wrap items-start sm:mx-[0] pr-[3px] pt-[3px] sm:px-[0] sm:w-[100%] w-[57%]">
+                      <Text
+                        className="font-bold mt-[1px] text-gray_900 w-[auto]"
+                        as="h5"
+                        variant="h5"
+                      >
                         Anne Carry
                       </Text>
-                      <Text className="time_Five" as="h6" variant="h6">
+                      <Text
+                        className="font-normal sm:ml-[2px] md:ml-[3px] ml-[5px] not-italic text-gray_500 w-[auto]"
+                        as="h6"
+                        variant="h6"
+                      >
                         4min
                       </Text>
                     </Row>
-                    <Row className="bg-gray_100 items-center justify-between 3xl:mt-[10px] lg:mt-[6px] xl:mt-[8px] 2xl:mt-[9px] 2xl:p-[10px] 3xl:p-[12px] lg:p-[7px] xl:p-[8px] rounded-radius12 w-[100%]">
+                    <Row className="bg-gray_100 flex flex-row md:flex-wrap sm:flex-wrap items-center justify-between sm:mt-[4px] md:mt-[6px] mt-[9px] p-[10px] sm:p-[5px] md:p-[6px] rounded-radius12 w-[100%]">
                       <Button
-                        className="flex items-center justify-center overflowmenu"
+                        className="flex sm:h-[21px] md:h-[27px] h-[38px] items-center justify-center sm:w-[20px] md:w-[26px] w-[38px]"
                         shape="icbRoundedBorder12"
                         size="mdIcn"
                         variant="icbFillLightblue20033"
                       >
                         <Img
                           src="images/img_forward.svg"
-                          className="flex items-center justify-center lg:h-[13px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px]"
+                          className="h-[18px] sm:h-[10px] md:h-[13px] flex items-center justify-center"
                           alt="forward One"
                         />
                       </Button>
-                      <Line className="bg-gray_500_7e h-[4px] rounded-radius2 w-[67%]" />
-                      <Text className="rowtime" as="h6" variant="h6">
+                      <Line className="bg-gray_500_7e h-[4px] md:my-[11px] my-[17px] sm:my-[9px] rounded-radius2 sm:w-[100%] w-[68%]" />
+                      <Text
+                        className="font-normal not-italic text-gray_500 w-[auto]"
+                        as="h6"
+                        variant="h6"
+                      >
                         0:06
                       </Text>
                     </Row>
                   </Column>
                 </Row>
-                <Row className="items-start lg:mt-[34px] xl:mt-[43px] 2xl:mt-[49px] 3xl:mt-[58px] pb-[3px] pr-[3px] w-[83%]">
+                <Row className="flex flex-row md:flex-wrap sm:flex-wrap items-start sm:mt-[26px] md:mt-[33px] mt-[49px] sm:mx-[0] pb-[3px] pr-[3px] sm:px-[0] sm:w-[100%] w-[84%]">
                   <Img
                     src="images/img_avatar_48X48.png"
-                    className="Avatar"
+                    className="sm:h-[21px] md:h-[27px] h-[38px] max-w-[100%] rounded-radius12 sm:w-[20px] md:w-[26px] w-[38px]"
                     alt="Avatar Five"
                   />
-                  <Column className="justify-start lg:mb-[5px] xl:mb-[7px] 2xl:mb-[8px] 3xl:mb-[9px] lg:ml-[10px] xl:ml-[13px] 2xl:ml-[15px] 3xl:ml-[18px] w-[78%]">
-                    <Row className="items-start pr-[2px] py-[2px] w-[72%]">
-                      <Text className="Username_Ten" as="h5" variant="h5">
+                  <Column className="flex flex-col justify-start sm:mb-[4px] md:mb-[5px] mb-[8px] md:ml-[10px] ml-[15px] sm:mx-[0] sm:px-[0] sm:w-[100%] w-[79%]">
+                    <Row className="flex flex-row md:flex-wrap sm:flex-wrap items-start sm:mx-[0] pr-[2px] sm:px-[0] py-[2px] sm:w-[100%] w-[72%]">
+                      <Text
+                        className="font-bold mb-[1px] text-gray_900 w-[auto]"
+                        as="h5"
+                        variant="h5"
+                      >
                         Marriet Miles
                       </Text>
-                      <Text className="time_Seven" as="h6" variant="h6">
+                      <Text
+                        className="font-normal sm:ml-[2px] md:ml-[3px] ml-[5px] mt-[1px] not-italic text-gray_500 w-[auto]"
+                        as="h6"
+                        variant="h6"
+                      >
                         4min
                       </Text>
                     </Row>
-                    <Text className="columnavatar1" as="h5" variant="h5">
+                    <Text
+                      className="font-normal mt-[14px] sm:mt-[7px] md:mt-[9px] not-italic text-gray_500 w-[auto]"
+                      as="h5"
+                      variant="h5"
+                    >
                       Yes, I saw his post yesterday
                     </Text>
                   </Column>
                 </Row>
-                <Row className="items-center lg:mt-[21px] xl:mt-[26px] 2xl:mt-[30px] 3xl:mt-[36px] w-[28%]">
+                <Row className="flex flex-row md:flex-wrap sm:flex-wrap items-center sm:mt-[15px] md:mt-[20px] mt-[30px] sm:mx-[0] sm:px-[0] sm:w-[100%] w-[29%]">
                   <Img
                     src="images/img_avatar.png"
-                    className="Avatar"
+                    className="sm:h-[21px] md:h-[27px] h-[38px] max-w-[100%] rounded-radius12 sm:w-[20px] md:w-[26px] w-[38px]"
                     alt="Avatar Six"
                   />
-                  <div className="bg-gray_500_cc lg:h-[5px] xl:h-[7px] 2xl:h-[8px] 3xl:h-[9px] lg:ml-[10px] xl:ml-[13px] 2xl:ml-[15px] 3xl:ml-[18px] rounded-radius50 lg:w-[4px] xl:w-[6px] 2xl:w-[7px] 3xl:w-[8px]"></div>
-                  <div className="bg-gray_500_99 lg:h-[5px] xl:h-[7px] 2xl:h-[8px] 3xl:h-[9px] lg:ml-[3px] xl:ml-[4px] 2xl:ml-[5px] 3xl:ml-[6px] rounded-radius50 lg:w-[4px] xl:w-[6px] 2xl:w-[7px] 3xl:w-[8px]"></div>
-                  <div className="bg-gray_500_33 lg:h-[5px] xl:h-[7px] 2xl:h-[8px] 3xl:h-[9px] lg:ml-[3px] xl:ml-[4px] 2xl:ml-[5px] 3xl:ml-[6px] rounded-radius50 lg:w-[4px] xl:w-[6px] 2xl:w-[7px] 3xl:w-[8px]"></div>
+                  <div className="bg-gray_500_cc sm:h-[4px] md:h-[5px] h-[7px] md:ml-[10px] ml-[15px] sm:ml-[7px] md:my-[10px] my-[15px] sm:my-[7px] rounded-radius50 sm:w-[3px] md:w-[4px] w-[7px]"></div>
+                  <div className="bg-gray_500_99 sm:h-[4px] md:h-[5px] h-[7px] mb-[12px] sm:mb-[6px] md:mb-[8px] sm:ml-[2px] md:ml-[3px] ml-[5px] sm:mt-[10px] md:mt-[13px] mt-[19px] rounded-radius50 sm:w-[3px] md:w-[4px] w-[7px]"></div>
+                  <div className="bg-gray_500_33 sm:h-[4px] md:h-[5px] h-[7px] sm:mb-[4px] md:mb-[6px] mb-[9px] sm:ml-[2px] md:ml-[3px] ml-[5px] sm:mt-[11px] md:mt-[15px] mt-[22px] rounded-radius50 sm:w-[3px] md:w-[4px] w-[7px]"></div>
                 </Row>
               </Column>
               <Input
-                className="font-inter placeholder:text-gray_500 email"
-                wrapClassName="2xl:mt-[55px] 3xl:mt-[66px] flex lg:mt-[39px] w-[100%] xl:mt-[48px]"
+                className="font-inter font-medium p-[0] text-[14px] placeholder:text-gray_500 text-gray_500 w-[100%]"
+                wrapClassName="flex md:mt-[37px] mt-[55px] sm:mt-[29px] w-[100%]"
                 name="WriteBox"
                 placeholder="Start typing…"
                 prefix={
-                  <Img
-                    src="images/img_plus_38X38.svg"
-                    className="bg-gray_500_33 lg:w-[12px] lg:h-[13px] lg:ml-[6px] lg:mr-[7px] xl:w-[16px] xl:h-[17px] xl:mx-[8px] 2xl:w-[18px] 2xl:h-[19px] 2xl:ml-[9px] 2xl:mr-[10px] 3xl:w-[21px] 3xl:h-[22px] 3xl:ml-[10px] 3xl:mr-[12px] rounded-radius50 my-[auto]"
-                    alt="plus"
-                  />
+                  <div className="w-[38px] h-[38px] ml-[9px] mr-[10px] sm:mr-[5px] sm:ml-[4px] sm:h-[21px] sm:w-[20px] md:h-[27px] md:w-[26px] md:mx-[6px] bg-gray_500_33 rounded-radius12 flex justify-center items-center">
+                    <Img
+                      src="images/img_plus_38X38.svg"
+                      className="my-[auto]"
+                      alt="plus"
+                    />
+                  </div>
                 }
                 suffix={
                   <Img
                     src="images/img_user_1.svg"
-                    className="mr-[1px] lg:w-[12px] lg:h-[13px] lg:ml-[24px] xl:w-[16px] xl:h-[17px] xl:ml-[31px] 2xl:w-[18px] 2xl:h-[19px] 2xl:ml-[35px] 3xl:w-[21px] 3xl:h-[22px] 3xl:ml-[42px] my-[auto]"
+                    className="ml-[35px] mr-[1px] sm:ml-[18px] md:ml-[24px] my-[auto]"
                     alt="user"
                   />
                 }

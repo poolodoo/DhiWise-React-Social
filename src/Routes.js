@@ -26,7 +26,6 @@ import Login from "pages/Login";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "pages/Home";
 import NotFound from "pages/NotFound";
-
 const ProjectRoutes = () => {
   return (
     <Router>
@@ -61,5 +60,4 @@ const ProjectRoutes = () => {
     </Router>
   );
 };
-
 export default ProjectRoutes;

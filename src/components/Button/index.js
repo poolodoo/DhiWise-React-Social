@@ -44,14 +44,14 @@ const variants = {
   icbOutlineGray50066: "border-2 border-gray_500_66 border-solid",
 };
 const sizes = {
-  sm: "lg:p-[3px] xl:p-[4px] p-[5px] 3xl:p-[6px]",
-  md: "lg:p-[5px] xl:p-[7px] p-[8px] 3xl:p-[9px]",
-  lg: "xl:p-[10px] p-[12px] 3xl:p-[14px] lg:p-[8px]",
-  xl: "lg:p-[15px] xl:p-[19px] p-[22px] 3xl:p-[26px]",
-  smIcn: "lg:p-[4px] xl:p-[6px] p-[7px] 3xl:p-[8px]",
-  mdIcn: "p-[11px] 3xl:p-[13px] lg:p-[7px] xl:p-[9px]",
-  lgIcn: "lg:p-[10px] xl:p-[13px] p-[15px] 3xl:p-[18px]",
-  xlIcn: "lg:p-[14px] xl:p-[17px] p-[20px] 3xl:p-[24px]",
+  sm: "sm:p-[2px] md:p-[3px] p-[5px]",
+  md: "sm:p-[4px] md:p-[5px] p-[8px]",
+  lg: "p-[12px] sm:p-[6px] md:p-[8px]",
+  xl: "md:p-[15px] p-[22px] sm:px-[15px] sm:py-[11px]",
+  smIcn: "sm:p-[3px] md:p-[4px] p-[7px]",
+  mdIcn: "p-[11px] sm:p-[5px] md:p-[7px]",
+  lgIcn: "md:p-[10px] p-[15px] sm:p-[7px]",
+  xlIcn: "md:p-[13px] p-[20px] sm:px-[15px] sm:py-[10px]",
 };
 
 const Button = ({
@@ -68,7 +68,7 @@ const Button = ({
     <button
       className={`${className} ${shapes[shape] || ""} ${
         variants[variant] || ""
-      } ${sizes[size] || ""} common-button `}
+      } ${sizes[size] || ""} `}
       {...restProps}
     >
       {!!leftIcon && leftIcon}

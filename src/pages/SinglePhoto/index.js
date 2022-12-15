@@ -1,24 +1,24 @@
 import React from "react";
 
 import { Stack, Row, Line, Column, Button, Img, Text, Input } from "components";
-import Sidebar from "components/Sidebar/Sidebar";
+import Sidebar from "components/Sidebar";
 
 const SinglePhotoPage = () => {
   return (
     <>
-      <Stack className="bg-blue_A700 font-sfprodisplay 2xl:h-[1025px] 3xl:h-[1230px] lg:h-[729px] xl:h-[911px] mx-[auto] w-[100%]">
-        <Row className="absolute items-center lg:pl-[3px] xl:pl-[4px] 2xl:pl-[5px] 3xl:pl-[6px] right-[0] w-[89%]">
-          <Line className="bg-gray_500_7e xl:h-[114px] 2xl:h-[129px] 3xl:h-[154px] lg:h-[92px] rounded-radius2 w-[5px]" />
-          <div className="bg-gray_900 2xl:h-[1025px] 3xl:h-[1230px] lg:h-[729px] xl:h-[911px] 2xl:ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] rounded-bl-[32px] rounded-br-[0] rounded-tl-[32px] rounded-tr-[0] w-[99%]"></div>
+      <Stack className="bg-blue_A700 font-sfprodisplay h-[1024px] mx-[auto] relative w-[100%]">
+        <Row className="absolute flex flex-row md:flex-wrap sm:flex-wrap items-center max-w-[1280px] sm:pl-[15px] md:pl-[3px] pl-[5px] sm:pr-[15px] right-[0] w-[100%]">
+          <Line className="bg-gray_500_7e h-[128px] sm:h-[69px] md:h-[89px] sm:my-[238px] md:my-[308px] my-[448px] rounded-radius2 w-[5px]" />
+          <div className="bg-gray_900 h-[1024px] sm:h-[546px] md:h-[705px] ml-[10px] sm:ml-[5px] md:ml-[6px] rounded-bl-[32px] rounded-br-[0] rounded-tl-[32px] rounded-tr-[0] sm:w-[100%] w-[99%]"></div>
         </Row>
-        <Column className="absolute items-center justify-start left-[17%] top-[4%] w-[48%]">
-          <Row className="items-center justify-between w-[96%]">
+        <Column className="absolute flex flex-col items-center justify-start left-[17%] max-w-[696px] sm:pl-[15px] sm:pr-[15px] top-[4%] w-[100%]">
+          <Row className="flex flex-row md:flex-wrap sm:flex-wrap items-center justify-between sm:mx-[0] sm:px-[0] sm:w-[100%] w-[96%]">
             <Button
-              className="flex items-center justify-center text-center w-[15%]"
+              className="flex items-center justify-center min-w-[16%] text-center w-[max-content]"
               leftIcon={
                 <Img
                   src="images/img_arrowleft.svg"
-                  className="text-center lg:w-[12px] lg:h-[13px] lg:mr-[7px] xl:w-[16px] xl:h-[17px] xl:mr-[8px] 2xl:w-[18px] 2xl:h-[19px] 2xl:mr-[10px] 3xl:w-[21px] 3xl:h-[22px] 3xl:mr-[12px]"
+                  className="mr-[10px] sm:mr-[5px] md:mr-[6px] text-center"
                   alt="arrow_left"
                 />
               }
@@ -26,13 +26,13 @@ const SinglePhotoPage = () => {
               size="xl"
               variant="FillWhiteA70033"
             >
-              <div className="bg-transparent font-bold xl:text-[12px] 2xl:text-[14px] 3xl:text-[16px] lg:text-[9px]">
+              <div className="bg-transparent cursor-pointer font-bold text-[14px] text-white_A700">
                 Back
               </div>
             </Button>
-            <Row className="font-inter items-center justify-between w-[19%]">
+            <Row className="flex flex-row md:flex-wrap sm:flex-wrap font-inter items-center justify-between sm:mx-[0] sm:px-[0] sm:w-[100%] w-[19%]">
               <Text
-                className="font-medium text-white_A700 w-[auto]"
+                className="flex-grow font-medium text-white_A700"
                 as="h5"
                 variant="h5"
               >
@@ -40,14 +40,14 @@ const SinglePhotoPage = () => {
               </Text>
               <Img
                 src="images/img_avatar.png"
-                className="Avatar"
+                className="flex-shrink-0 sm:h-[21px] md:h-[27px] h-[38px] max-w-[100%] rounded-radius12 sm:w-[20px] md:w-[26px] w-[38px]"
                 alt="Avatar"
               />
             </Row>
           </Row>
-          <Row className="items-center justify-between lg:mt-[102px] xl:mt-[128px] 2xl:mt-[144px] 3xl:mt-[172px] w-[100%]">
+          <Row className="flex flex-row md:flex-wrap sm:flex-wrap items-center justify-between mt-[144px] sm:mt-[76px] md:mt-[99px] w-[100%]">
             <Button
-              className="flex items-center justify-center mail_One1"
+              className="flex sm:h-[26px] md:h-[34px] h-[48px] items-center justify-center sm:w-[25px] md:w-[33px] w-[48px]"
               shape="icbRoundedBorder12"
               size="lgIcn"
               variant="icbOutlineWhiteA70033"
@@ -60,11 +60,11 @@ const SinglePhotoPage = () => {
             </Button>
             <Img
               src="images/img_photo4.png"
-              className="lg:h-[384px] xl:h-[481px] 2xl:h-[541px] 3xl:h-[649px] rounded-radius8 w-[73%]"
+              className="max-w-[100%] rounded-radius8 sm:w-[100%] w-[74%]"
               alt="Image"
             />
             <Button
-              className="flex items-center justify-center mail_One1"
+              className="flex sm:h-[26px] md:h-[34px] h-[48px] items-center justify-center sm:w-[25px] md:w-[33px] w-[48px]"
               shape="icbRoundedBorder12"
               size="lgIcn"
               variant="icbOutlineWhiteA70033_1"
@@ -77,12 +77,12 @@ const SinglePhotoPage = () => {
             </Button>
           </Row>
         </Column>
-        <Row className="absolute items-center justify-between right-[0] w-[31%]">
-          <div className="bg-gray_500_7e xl:h-[114px] 2xl:h-[129px] 3xl:h-[154px] lg:h-[92px] rounded-radius2 w-[1%]"></div>
-          <Column className="bg-white_A700 items-end lg:p-[28px] xl:p-[35px] 2xl:p-[40px] 3xl:p-[48px] rounded-bl-[32px] rounded-br-[0] rounded-tl-[32px] rounded-tr-[0] w-[97%]">
-            <Row className="items-center justify-end lg:mt-[3px] xl:mt-[4px] 2xl:mt-[5px] 3xl:mt-[6px] w-[33%]">
+        <Row className="absolute flex flex-row md:flex-wrap sm:flex-wrap items-center justify-between max-w-[450px] sm:pl-[15px] sm:pr-[15px] w-[100%]">
+          <div className="bg-gray_500_7e h-[128px] sm:h-[69px] md:h-[89px] sm:my-[238px] md:my-[308px] my-[448px] rounded-radius2 w-[2%]"></div>
+          <Column className="bg-white_A700 flex flex-col items-end sm:mx-[0] sm:p-[15px] md:p-[27px] p-[40px] rounded-bl-[32px] rounded-br-[0] rounded-tl-[32px] rounded-tr-[0] sm:w-[100%] w-[97%]">
+            <Row className="flex flex-row md:flex-wrap sm:flex-wrap items-center justify-end sm:mt-[2px] md:mt-[3px] mt-[5px] sm:mx-[0] sm:px-[0] sm:w-[100%] w-[33%]">
               <Button
-                className="font-bold lg:text-[15px] xl:text-[19px] 2xl:text-[22px] 3xl:text-[26px] text-center mail_One1"
+                className="cursor-pointer font-bold sm:h-[26px] md:h-[34px] h-[48px] sm:text-[18.32px] md:text-[20.32px] text-[22.32px] text-center text-white_A700 sm:w-[25px] md:w-[33px] w-[48px]"
                 shape="RoundedBorder12"
                 size="lg"
                 variant="FillLightblue200"
@@ -91,20 +91,20 @@ const SinglePhotoPage = () => {
               </Button>
               <Img
                 src="images/img_avatar_48X48.png"
-                className="Avatar_One"
+                className="sm:h-[26px] md:h-[34px] h-[48px] max-w-[100%] sm:ml-[10px] md:ml-[13px] ml-[20px] rounded-radius12 sm:w-[25px] md:w-[33px] w-[48px]"
                 alt="Avatar One"
               />
             </Row>
-            <Row className="bg-gray_100 font-inter items-center 3xl:mt-[1012px] lg:mt-[599px] xl:mt-[749px] 2xl:mt-[843px] lg:p-[3px] xl:p-[4px] 2xl:p-[5px] 3xl:p-[6px] rounded-radius4 w-[96%]">
+            <Row className="bg-gray_100 flex flex-row md:flex-wrap sm:flex-wrap font-inter items-center sm:mt-[449px] md:mt-[580px] mt-[843px] sm:mx-[0] sm:p-[2px] md:p-[3px] p-[5px] rounded-radius4 sm:w-[100%] w-[96%]">
               <Input
-                className="placeholder:text-gray_500 email"
-                wrapClassName="flex w-[86%]"
+                className="font-medium p-[0] text-[14px] placeholder:text-gray_500 text-gray_500 w-[100%]"
+                wrapClassName="flex sm:mx-[0] sm:w-[100%] w-[87%]"
                 name="FrameEight"
                 placeholder="Write a comment…"
                 suffix={
                   <Img
                     src="images/img_user_1.svg"
-                    className="lg:w-[9px] lg:h-[10px] lg:ml-[24px] lg:mr-[3px] xl:w-[12px] xl:h-[13px] xl:ml-[31px] xl:mr-[4px] 2xl:w-[14px] 2xl:h-[15px] 2xl:ml-[35px] 2xl:mr-[5px] 3xl:w-[16px] 3xl:h-[17px] 3xl:ml-[42px] 3xl:mr-[6px] my-[auto]"
+                    className="ml-[35px] mr-[5px] sm:mr-[2px] sm:ml-[18px] md:mr-[3px] md:ml-[24px] my-[auto]"
                     alt="user"
                   />
                 }
@@ -113,13 +113,13 @@ const SinglePhotoPage = () => {
               ></Input>
               <Img
                 src="images/img_send.svg"
-                className="2xl:ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] location"
+                className="md:h-[10px] h-[14px] sm:h-[8px] max-w-[100%] ml-[10px] sm:ml-[5px] md:ml-[6px] w-[14px] sm:w-[7px] md:w-[9px]"
                 alt="send"
               />
             </Row>
           </Column>
         </Row>
-        <Sidebar className="absolute left-[0] w-[11%]" />
+        <Sidebar className="absolute md:hidden sm:hidden w-[12%]" />
       </Stack>
     </>
   );

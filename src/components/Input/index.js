@@ -17,20 +17,20 @@ const shapes = {
   srcRoundedBorder12: "rounded-radius12",
 };
 const sizes = {
-  sm: "lg:p-[3px] xl:p-[4px] p-[5px] 3xl:p-[6px]",
-  md: "p-[11px] 3xl:p-[13px] lg:p-[7px] xl:p-[9px]",
-  lg: "lg:pb-[24px] xl:pb-[31px] pb-[35px] 3xl:pb-[42px] xl:pt-[11px] pt-[13px] 3xl:pt-[15px] lg:pt-[9px] xl:px-[11px] px-[13px] 3xl:px-[15px] lg:px-[9px]",
-  xl: "lg:p-[11px] xl:p-[14px] p-[16px] 3xl:p-[19px]",
+  sm: "sm:p-[2px] md:p-[3px] p-[5px]",
+  md: "p-[11px] sm:p-[5px] md:p-[7px]",
+  lg: "sm:pb-[18px] md:pb-[24px] pb-[35px] pt-[13px] sm:pt-[6px] md:pt-[8px] px-[13px] sm:px-[6px] md:px-[8px]",
+  xl: "md:p-[11px] p-[16px] sm:px-[15px] sm:py-[8px]",
   "2xl":
-    "xl:pb-[12px] pb-[14px] 3xl:pb-[16px] lg:pb-[9px] lg:pt-[12px] xl:pt-[16px] pt-[18px] 3xl:pt-[21px] xl:px-[12px] px-[14px] 3xl:px-[16px] lg:px-[9px]",
+    "pb-[14px] sm:pb-[7px] md:pb-[9px] md:pt-[12px] pt-[18px] sm:pt-[9px] px-[14px] sm:px-[7px] md:px-[9px]",
   "3xl":
-    "lg:pb-[24px] xl:pb-[31px] pb-[35px] 3xl:pb-[42px] lg:pt-[12px] xl:pt-[16px] pt-[18px] 3xl:pt-[21px] lg:px-[12px] xl:px-[16px] px-[18px] 3xl:px-[21px]",
+    "sm:pb-[18px] md:pb-[24px] pb-[35px] md:pt-[12px] pt-[18px] sm:pt-[9px] md:px-[12px] sm:px-[15px] px-[18px]",
   "4xl":
-    "lg:pb-[13px] xl:pb-[16px] pb-[19px] 3xl:pb-[22px] lg:pt-[16px] xl:pt-[20px] pt-[23px] 3xl:pt-[27px] lg:px-[13px] xl:px-[16px] px-[19px] 3xl:px-[22px]",
-  smSrc: "lg:p-[5px] xl:p-[7px] p-[8px] 3xl:p-[9px]",
+    "sm:pb-[10px] md:pb-[13px] pb-[19px] sm:pt-[12px] md:pt-[15px] pt-[23px] md:px-[13px] sm:px-[15px] px-[19px]",
+  smSrc: "sm:p-[4px] md:p-[5px] p-[8px]",
   mdSrc:
-    "xl:pb-[11px] pb-[13px] 3xl:pb-[15px] lg:pb-[9px] lg:pt-[5px] xl:pt-[7px] pt-[8px] 3xl:pt-[9px] lg:px-[5px] xl:px-[7px] px-[8px] 3xl:px-[9px]",
-  lgSrc: "lg:p-[14px] xl:p-[18px] p-[21px] 3xl:p-[25px]",
+    "pb-[13px] sm:pb-[6px] md:pb-[8px] sm:pt-[4px] md:pt-[5px] pt-[8px] sm:px-[4px] md:px-[5px] px-[8px]",
+  lgSrc: "md:p-[14px] p-[21px] sm:px-[15px] sm:py-[11px]",
 };
 
 const Input = React.forwardRef(
